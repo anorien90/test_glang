@@ -1,0 +1,1 @@
+fn tst(); echo 123; end
