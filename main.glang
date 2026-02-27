@@ -1,0 +1,6 @@
+component input string username --label "Username" --default "Alice" --required
+set summary = f"User: {$input_username}, Age: {$input_age}, Role: {$input_role}"
+echo $summary
+component output text result --label "Summary"
+component input number age --label "Age" --min 0 --max 150 --default 25
+component input dropdown role --label "Role" --options "admin,editor,viewer" --default "editor"
